@@ -6,7 +6,7 @@
 /*   By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 20:20:58 by anatashi          #+#    #+#             */
-/*   Updated: 2020/12/10 17:16:01 by anatashi         ###   ########.fr       */
+/*   Updated: 2020/12/10 17:43:17 by anatashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@
 
 typedef	struct	s_philo_pharam
 {
-	int			numb_phil;
-	int			time_die;
-	int			time_eat;
-	int			time_sleep;
-	int			ntepme;
+	size_t		numb_phil;
+	size_t		time_die;
+	size_t		time_eat;
+	size_t		time_sleep;
+	size_t		ntepme;
 }				t_philo_pharam;
 
 int	main(int argc, char **argv);
