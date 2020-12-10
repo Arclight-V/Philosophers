@@ -6,7 +6,7 @@
 /*   By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 20:20:58 by anatashi          #+#    #+#             */
-/*   Updated: 2020/12/10 17:43:17 by anatashi         ###   ########.fr       */
+/*   Updated: 2020/12/10 18:56:27 by anatashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,23 @@
 # include <sys/time.h>
 # include <pthread.h>
 
+# define ERROR_1 "ERROR: invalid number of arguments. should be 5 of 6.\n"
+# define ERROR_2 "ERROR: number of philosophers must be positive number\n"
 /*
 ** numb_phil  - number_of_philosopher
 ** time_die   - time to die
 ** time_eat   - time to eat
 ** time_sleep - time to sleep
-** ntepme	  - [umber_of_times_each_philosopher_must_eat]
+** ntepme	  - [number_of_times_each_philosopher_must_eat]
 */
 
 typedef	struct	s_philo_pharam
 {
-	size_t		numb_phil;
-	size_t		time_die;
-	size_t		time_eat;
-	size_t		time_sleep;
-	size_t		ntepme;
+	long long	numb_phil;
+	long long	time_die;
+	long long	time_eat;
+	long long	time_sleep;
+	long long	ntepme;
 }				t_philo_pharam;
 
 int	main(int argc, char **argv);
