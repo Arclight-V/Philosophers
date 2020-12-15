@@ -6,7 +6,7 @@
 #    By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/09 20:20:04 by anatashi          #+#    #+#              #
-#    Updated: 2020/12/10 10:20:41 by anatashi         ###   ########.fr        #
+#    Updated: 2020/12/12 18:24:00 by anatashi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 
-	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME) -pthread
 
 %.o : %.c
 	$(CC) $(FLAGS) -I$(HEADER_DIR) -c $< -o $@ -MD

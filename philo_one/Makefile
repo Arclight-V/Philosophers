@@ -6,7 +6,7 @@
 #    By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/09 20:20:15 by anatashi          #+#    #+#              #
-#    Updated: 2020/12/10 10:20:38 by anatashi         ###   ########.fr        #
+#    Updated: 2020/12/15 11:56:26 by anatashi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,9 @@ HEADER_DIR	= header/
 
 SRCS_DIR	= srcs/
 SRCS_LIST	= philo_one.c\
-			  tmp.c
+			  tmp.c\
+			  tools.c\
+			  print_error.c
 
 SOURCE		= $(addprefix $(SRCS_DIR), $(SRCS_LIST))
 
@@ -32,7 +34,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 
-	$(CC) $(FLAGS) $(OBJ) -o $(NAME)
+	$(CC) $(FLAGS) $(OBJ) -o $(NAME) -pthread
 
 %.o : %.c
 	$(CC) $(FLAGS) -I$(HEADER_DIR) -c $< -o $@ -MD
