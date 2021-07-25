@@ -1,0 +1,91 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+
+@Arclight-V
+vnstr
+/
+ContainersCpp
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+ContainersCpp/.gitignore
+@vnstr
+vnstr ft_list.hpp: tests for member-funbc sort()
+…
+Latest commit c32b508 on Mar 19
+ History
+ 1 contributor
+49 lines (38 sloc)  386 Bytes
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Debugger
+*.dSYM
+
+# Tests
+
+logs
+*.out
+*.output
+bin
+user_bin
+user_bin_for_leaks
+
+# DS_Store
+.DS_Store
+
+# Clion
+.idea
+*.cbp
+cmake-build-debug/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Testing/
+ft_list_test
+
+# VSCode
+.vscode
