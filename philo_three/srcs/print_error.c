@@ -6,11 +6,11 @@
 /*   By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 10:39:57 by anatashi          #+#    #+#             */
-/*   Updated: 2021/01/08 15:18:18 by anatashi         ###   ########.fr       */
+/*   Updated: 2021/01/08 15:44:14 by anatashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philo_one.h"
+#include "philo_three.h"
 
 int	print_error(int error_number)
 {

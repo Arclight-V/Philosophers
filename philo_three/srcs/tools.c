@@ -6,11 +6,11 @@
 /*   By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 11:09:26 by anatashi          #+#    #+#             */
-/*   Updated: 2020/12/29 10:26:13 by anatashi         ###   ########.fr       */
+/*   Updated: 2021/01/05 09:02:58 by anatashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philo_one.h"
+#include "philo_three.h"
 
 long	time_stop(void)
 {
@@ -39,4 +39,18 @@ size_t	ft_strlen(char *str)
 void	ft_putstr_fd(char *str, int fd)
 {
 	write(fd, str, ft_strlen(str));
+}
+
+void	waiting_for_the_process_to_complete_or_die(t_philo_three *philo_three,
+								t_configuration_simulation *conf)
+{
+	int i;
+
+	waitpid(-1, &i, 0);
+	i = -1;
+	while (++i < conf->ntepme)
+		waitpid(philo_three->all_id[i], NULL, 0);
+	i = -1;
+	while (++i < conf->ntepme)
+		kill(philo_three->all_id[i], 0);
 }

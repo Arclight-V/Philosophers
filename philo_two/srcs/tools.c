@@ -6,11 +6,11 @@
 /*   By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 11:09:26 by anatashi          #+#    #+#             */
-/*   Updated: 2020/12/29 10:26:13 by anatashi         ###   ########.fr       */
+/*   Updated: 2020/12/29 10:19:17 by anatashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "philo_one.h"
+#include "philo_two.h"
 
 long	time_stop(void)
 {

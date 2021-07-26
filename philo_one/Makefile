@@ -6,7 +6,7 @@
 #    By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/09 20:20:15 by anatashi          #+#    #+#              #
-#    Updated: 2020/12/15 11:56:26 by anatashi         ###   ########.fr        #
+#    Updated: 2020/12/28 19:19:37 by anatashi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,8 +19,13 @@ HEADER_DIR	= header/
 
 SRCS_DIR	= srcs/
 SRCS_LIST	= philo_one.c\
-			  tmp.c\
+			  freeing_memory.c\
+			  init_struct.c\
+			  parser.c\
+			  print_message.c\
+			  checking_death_and_ntepme.c\
 			  tools.c\
+			  stream_tools.c\
 			  print_error.c
 
 SOURCE		= $(addprefix $(SRCS_DIR), $(SRCS_LIST))

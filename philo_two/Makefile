@@ -6,7 +6,7 @@
 #    By: anatashi <anatashi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/09 20:20:04 by anatashi          #+#    #+#              #
-#    Updated: 2020/12/12 18:24:00 by anatashi         ###   ########.fr        #
+#    Updated: 2020/12/28 21:18:29 by anatashi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,15 @@ FLAGS = -Wall -Wextra -Werror
 HEADER_DIR	= header/
 
 SRCS_DIR	= srcs/
-SRCS_LIST	= philo_two.c
+SRCS_LIST	= philo_two.c\
+			  print_error.c\
+			  tools.c\
+			  parser.c\
+			  init_struct.c\
+			  checking_death_and_ntepme.c\
+			  print_message.c\
+			  stream_tools.c\
+			  freeing_memory.c
 
 
 SOURCE		= $(addprefix $(SRCS_DIR), $(SRCS_LIST))
